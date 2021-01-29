@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Web_CSS.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='Img/Cobra.ico')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+
+    <title>Cobra Tec</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5000/" style="font-family: 'Major Mono Display', monospace;">
+                <image src="{{ url_for('static', filename='Img/Cobra.png')}}" alt="" width="30" height="30"
+                    class="d-inline-block align-left"></image>
+                Cobra Tec
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto justify-content-center">
+                    <li class=" nav-item">
+                        <a></a>
+                    </li>
+                    <li class="nav-item" style="font-family: 'Courier New', Courier, monospace;" style="">
+                        <a class="nav-link" href="http://127.0.0.1:5000/downloads/">Downloads</a>
+                    </li>
+                    <li class="nav-item" style="font-family: 'Courier New', Courier, monospace;">
+                        <a class="nav-link" href="http://127.0.0.1:5000/about/">About</a>
+                    </li>
+                    <!-- <li class="nav-item" style="font-family: 'Courier New', Courier, monospace;">
+                        <a class="nav-link" href="http://127.0.0.1:5000/comments/">Comments</a>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="top_contaner">
+        <h1 class="head" style="margin: auto; margin-bottom: 20px; color: #222831; text-shadow: 2px 2px #9a9a9a;">
+            <b>Cobra Tec</b>
+        </h1>
+        <image src="{{ url_for('static', filename='Img/Cobra_1.png')}}" alt="Cobra" class="Cobra_Head"
+            style="margin: auto;"></image>
+    </div>
+    <div class="main_A">
+
+        <image src="{{ url_for('static', filename='Img/Me_1.png')}}" alt="Me" style="box-shadow: none;"
+            class="image_Center"></image>
+        <div>
+
+            <h1 style="margin-top: 20px;"><b>About Me</b></h1>
+            <div class="div_Bottom">
+                <hr>
+                <p class="Main_P">Hi, my name is Caleb, I am a programmer.</p>
+            </div>
+        </div>
+
+        <h1><b>Projects</b></h1>
+
+        <hr class="wide_hr">
+
+        <div>
+            <image src="{{ url_for('static', filename='Img/Number_Line1.png')}}" alt="Number_Line" class="image_Center"
+                style="margin-top: 20px;">
+            </image>
+
+            <div class="div_Bottom">
+                <h2><b>Number Line</b></h2>
+                <hr>
+                <p class="Main_P">
+                    Number
+                    Line, is a
+                    calculator. This was our first app that we published.</p>
+
+                <a href="http://127.0.0.1:5000/numberlinedownloadpage/" class="DA_Button_Small" data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="This link will guide you to another page to further read, then the final download.">
+
+                    Download
+                </a>
+            </div>
+        </div>
+
+        <hr class="Bot_hr">
+
+        <div>
+            <image src="{{ url_for('static', filename='Img/Icon1.png')}}" alt="Time_Line" class="image_Center"></image>
+
+            <div class="div_Bottom">
+
+                <h2><b>Time Line</b></h2>
+                <hr>
+                <p class=" Main_P">Time Line, is a
+                    digital clock. This was our second app that we published.</p>
+                <a href="http://127.0.0.1:5000/timelinedownloadpage/" class="DA_Button_Small" data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="This link will guide you to another page to further read, then the final download.">
+                    Download
+                </a>
+            </div>
+        </div>
+
+        <hr class="wide_hr">
+    </div>
+
+    <div class="div_bottom"
+        style="width: 100%; text-align: center; background-color: #eeeeee; margin: 0px; height: 50px;">
+        <h5
+            style="margin-top: 15px; display: inline-block; font-family: 'Major Mono Display', monospace; color: #303030;">
+            Contact us at: _________________________</h5>
+    </div>
+
+
+</body>
+
+</html>

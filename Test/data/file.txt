@@ -1,0 +1,4 @@
+Number
+                    Line, is a 
+                    calculator. This was our first app that we ended up publishing. It took
+                    about a week and a half to have it finished and published on GitHub.
